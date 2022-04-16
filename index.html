@@ -256,32 +256,33 @@
                 document.querySelector(".second").classList.remove("period_btn_active")
                 document.querySelector(".third").classList.remove("period_btn_active")
                 document.querySelector(".first").classList.toggle("period_btn_active")
-                calc(devices, 7, 0.15)
+                calc(devices,0.61)
                 break;
             case 2:
                 document.querySelector(".first").classList.remove("period_btn_active")
                 document.querySelector(".third").classList.remove("period_btn_active")
                 document.querySelector(".second").classList.toggle("period_btn_active")
-                calc(devices, 30, 2.74)
+                calc(devices,2.60)
                 break;
             case 3:
                 document.querySelector(".first").classList.remove("period_btn_active")
                 document.querySelector(".second").classList.remove("period_btn_active")
                 document.querySelector(".third").classList.toggle("period_btn_active")
-                calc(devices, 365, 32.57)
+                calc(devices,30.85)
                 break;
         }
     }
 
-    function calc(devices, period, percent) {
+    function calc(devices,percent) {
         const elem = document.querySelector(".income_amount");
         const investUSD = document.querySelector(".invest_usd");
         const investRUB = document.querySelector(".invest_rub");
         const incomePercent = document.querySelector(".income_percent");
-        investUSD.textContent = `${devices * 11900}`
-        investRUB.textContent = `${devices * 1076236}`
+        const totalValue = devices * 11900;
+        investUSD.textContent = `${totalValue}`
+        investRUB.textContent = `${devices * 960925}`
         incomePercent.textContent = `${percent} %`
-        elem.textContent = `${devices * period} $`
+        elem.textContent = `${Math.floor((totalValue) * (percent / 100))} $`
     }
 </script>
 
