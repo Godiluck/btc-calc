@@ -1,0 +1,165 @@
+ body {
+     background-color: grey;
+     font-family: 'Montserrat', serif;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.calc {
+    background-color: white;
+    border-radius: 20px;
+    width: min-content;
+    height: auto;
+}
+
+.calc_padding {
+    padding: 40px;
+}
+
+.calc_title {
+    margin-top: 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.coin {
+    width: auto;
+}
+
+.inner_title {
+    color: grey;
+}
+
+.coin_btn {
+    height: 44px;
+    width: 102px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.coin_img {
+    width: 17px;
+    height: 17px;
+}
+
+.margin {
+    margin-left: 12px;
+}
+
+.coin_btn_text {
+    margin: 2px 0 2px 12px;
+}
+
+.devices {
+
+}
+
+.devices_input {
+    padding: 0;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+    width: 166px;
+    height: 44px;
+}
+
+.devices_input:hover{
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.period {
+
+}
+
+.period_buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.period_btn {
+    width: 102px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+.period_btn:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.period_btn_active {
+    border: 1px solid coral;
+}
+
+.left_btn {
+    border-radius: 10px 0 0 10px;
+    border-right: none;
+}
+
+.right_bth {
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+}
+
+.line {
+    margin: 23px 0 23px 0;
+    height: 0;
+    width: 304px;
+    border-top: 1px solid grey;
+}
+
+.invest_amount {
+    display: flex;
+    align-items: center;
+}
+
+.income_row {
+    display: flex;
+    align-items: center;
+}
+
+.income_amount {
+
+}
+
+.income_equal {
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 20px;
+    color: grey;
+    font-size: small;
+}
+
+.income_percent {
+    color: grey;
+    margin-bottom: 18px;
+    font-size: small;
+}
+
+.title_margin {
+    margin-bottom: 0;
+}
+
+.add_info_inner {
+    margin-top: 5px;
+    font-size: 12px;
+    color: grey;
+}

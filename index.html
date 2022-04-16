@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="calc">
+            <div class="calc_padding">
+
+                <h3 class="calc_title">
+                    Калькулятор дохода
+                </h3>
+
+            <div class="row">
+
+                <div class="coin">
+                <p class="inner_title">
+                    Монета
+                </p>
+                <div class="coin_btn">
+                    <img class="coin_img margin" src="img/Bitcoin1.jpg" alt="">
+                    <p class="coin_btn_text">BTC</p>
+                </div>
+                </div>
+
+                <div class="devices">
+                <p class="inner_title">
+                    Количество устройств
+                </p>
+                <label>
+                    <input class="devices_input" type="text" placeholder="Введите количество">
+                </label>
+                </div>
+
+            </div>
+
+            <div class="period">
+                <p class="inner_title">Период</p>
+                <div class="period_buttons">
+                    <div class="period_btn first left_btn" onclick="changeClass(1)">Неделя</div>
+                    <div class="period_btn second" onclick="changeClass(2)">Месяц</div>
+                    <div class="period_btn third right_bth" onclick="changeClass(3)">Год</div>
+                </div>
+            </div>
+
+                <div class="line"></div>
+
+
+                <div class="invest_info">
+                    <p class="inner_title">Размер инвестиций</p>
+                    <div class="row">
+                        <div class="invest_amount">
+                            <img class="coin_img" src="img/Bitcoin1.jpg" alt="">
+                            <p class="coin_btn_text invest_usd">1 558 900</p> <p style="margin-left: 5px" class="coin_btn_text">$</p>
+                        </div>
+                        <div class="invest_amount">
+                            <img class="coin_img" src="img/Bitcoin1.jpg" alt="">
+                            <p class="coin_btn_text invest_rub">141 859 900</p> <p style="margin-left: 5px" class="coin_btn_text">&#8381</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="income_info">
+                    <p class="inner_title title_margin">Ваш доход за период</p>
+                    <div class="income_row">
+                        <p class="income_amount">9 952 $</p>
+                        <p class="income_equal">=</p>
+                        <p class="income_percent">0,15%</p>
+                    </div>
+                </div>
+
+                <div class="add_info">
+                    <p class="add_info_inner">
+                        * Доходность зависит от курса Биткоина (BTC). Средняя доходность за прошлый год составила более 50%, на сегодняшний день доходность составляет более 35% в год.
+                    </p>
+                    <p class="add_info_inner">
+                        * * В случае временного снижение курса, производительность оборудования, которое мы предлагаем, позволит сохранить положительную рентабельность и стабильно зарабатывать в течении минимум 5 лет.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
